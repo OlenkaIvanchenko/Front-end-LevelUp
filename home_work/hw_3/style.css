@@ -1,0 +1,61 @@
+/*font-face - завантаження локальних шрифтів*/
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/montserrat/Montserrat-Regular.ttf);
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Arial", serif;
+    font-size: 100%;
+}
+
+.first-block {
+    border: 3px solid #B388EB;
+    border-radius: 10px;
+    background-color: #F7AEF8;
+    padding: 10px;
+    text-align: center;
+}
+
+.second-block {
+    border: 2px dashed #B388EB;
+    border-radius: 10px;
+    background-color: #72DDF7;
+    padding: 20px;
+    
+}
+
+
+.third-block {
+    border: 1rem solid #B388EB;
+    border-radius: 10px;
+    background-color: #F7AEF8;
+    padding: 30px;
+    display: flex;
+}
+
+
+.roboto-font {
+    font-family: "Roboto", serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 1,5rem;
+}
+
+.montserrat-font {
+    font-family: "Montserrat", serif;
+    font-size: 2em;
+}
+
+.opensans-font {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+}
