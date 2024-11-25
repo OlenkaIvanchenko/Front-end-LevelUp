@@ -1,0 +1,30 @@
+
+
+button {
+    background: linear-gradient(13deg, orange 60%, cyan);    
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(345deg, rgb(198, 221, 66) 60%, rgb(236, 18, 18));
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: right
+}
