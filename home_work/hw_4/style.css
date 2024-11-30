@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(75deg, orange 25%, cyan);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(75deg, orange 25%, cyan 25);
+}
+  
+  li {
+    float: left;
+}
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgb(247, 60, 60);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(75deg, orange 25%, cyan);
+    
+}
+
+h1, h2, p {
+    text-align: center;
+    font-family: serif;
+    
+}
+/*стилі для картинки*/
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bt-up {
+    background: linear-gradient(75deg, orange 25%, cyan);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    margin: 15px;
+    border: 0;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+.bt-up:hover {
+    background: linear-gradient(345deg, rgb(198, 221, 66) 60%, rgb(236, 18, 18));
+}
+
+
+
+.btn-nxt {
+    background: linear-gradient(75deg, orange 25%, cyan);
+    right: 0;
+    bottom: 0;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 100px;
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bolder;  
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.btn-nxt:hover {
+    background: linear-gradient(90deg, rgb(198, 221, 66) 25%, rgb(236, 18, 18))
+}/*стилі для box*/
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(255, 255, 240, 60%);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
