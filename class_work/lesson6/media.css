@@ -1,0 +1,29 @@
+@media (max-width: 998px) {
+    h1 {
+        font-size: 5em;
+        color: bisque;
+    }
+    p {
+        color: brown;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+        color: rgb(68, 59, 48);
+    }
+    p {
+        color: rgb(212, 28, 28);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 8px;
+    }
+}
+
+.container {
+    max-width: 450px;
+}

@@ -1,0 +1,47 @@
+body {
+    counter-reset: section;
+}
+
+.title {
+    counter-increment: section;
+}
+
+.title h2::before {
+    content: "Секція " counter(section) ":";
+    font-weight: bold;
+}
+
+.list {
+    counter-reset: item;
+    list-style: none;
+
+    
+}
+  
+.list > li {
+    counter-increment: item;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position:sticky;
+}
+
+.list > li:before {
+    content: counter(section) "." counter(item) ". ";
+    font-weight: bold;
+    position: absolute;
+    left: -25px;
+    color: white;
+    background-color: red;
+    border-radius: 100%;
+    padding: 2px;
+    position:relative;
+
+}
+
+/* Стили для параметров */
+.num {
+    list-style: none;
+    padding: 10px;
+  }
+ 
