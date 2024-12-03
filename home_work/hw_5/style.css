@@ -14,8 +14,6 @@ body {
 .list {
     counter-reset: item;
     list-style: none;
-
-    
 }
   
 .list > li {
@@ -23,7 +21,7 @@ body {
     position: relative;
     margin-bottom: 10px;
     padding-left: 10px;
-    position:sticky;
+    display: flex;
 }
 
 .list > li:before {
@@ -33,15 +31,36 @@ body {
     left: -25px;
     color: white;
     background-color: red;
-    border-radius: 100%;
+    border-radius: 50%;
     padding: 2px;
-    position:relative;
-
 }
 
-/* Стили для параметров */
+.list > li::after {
+    content: ""; 
+    display: inline-block; 
+    width: 12px; 
+    height: 12px; 
+    background-color: orchid; 
+    margin-left: 8px; 
+
+  
+    
+  }
+
+
+/* Стилі для параметрів */
 .num {
     list-style: none;
-    padding: 10px;
+    padding-bottom: 15px;
   }
+
+.num > li::before {
+    content: "";
+    display: inline-block; 
+    width: 10px; 
+    height: 10px; 
+    background-color: rgb(21, 10, 164); 
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
  
