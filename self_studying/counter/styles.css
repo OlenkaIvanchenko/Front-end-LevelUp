@@ -1,0 +1,45 @@
+body {
+    counter-reset: section;
+}
+h2 {
+    counter-increment: section;
+}
+
+h2::before {
+    content: "Секція " counter(section) ": ";
+    color: #ccc;
+}
+
+
+
+
+.nested-list {
+    counter-reset: nested-counter;
+}
+
+.nested-list li {
+    counter-increment: nested-counter;
+    list-style: none;
+}
+.nested-list li::before {
+    content: "0.0";
+    margin: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+
+
+.list {
+    counter-reset: num; /*назва лічильника*/
+}
+
+.list li {
+    counter-increment: num; /*збільшення лічильника*/
+    list-style: none;
+}
+
+.list li::before {
+    content: counter(num);
+}
