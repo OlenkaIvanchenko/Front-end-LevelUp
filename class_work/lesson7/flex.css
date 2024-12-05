@@ -1,0 +1,27 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.parent {
+    display: flex;
+    justify-content:space-around;
+    height: 500px;
+    border: 1px solid #fff;
+}
+
+.child {
+    width: 200px;
+}
+
+.child:nth-child(odd) {
+    background: greenyellow;
+    height: 50px;
+}
+
+.child:nth-child(even) {
+    background: gainsboro;
+    height: 70px;
+}
