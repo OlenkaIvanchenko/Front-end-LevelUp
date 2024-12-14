@@ -1,0 +1,75 @@
+:root {
+    --secondary-green: #B9FF66;
+    --secondary-dark: #191A23;
+    --secondary-white: #FFFFFF;
+    --secondary-grey: #F3F3F3;
+    --primary-black: #000;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-pills { 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+    gap: 20px;
+}
+.nav-pills a {
+    color: var(--primary-black) ;
+}
+.nav-link:hover {
+    background: var(--secondary-green);
+    color: var(--primary-black);
+}
+
+.btn {
+    padding: 20px 35px 20px 35px;
+    border-radius: 14px;
+}
+.btn-outline-dark:hover {
+    background: var(--secondary-green);
+    color: var(--primary-black)
+}
+.btn-dark:hover {
+    background: var(--secondary-green);
+    color: var(--primary-black)
+}
+
+.section-one {
+    margin-top: 70px;
+}
+.section-one h1 {
+    font-size: 3.75em;
+}
+
+.section-one p {
+    font-size: 1.25em;
+    padding: 35px 33px 35px 0;
+    line-height: 28px;
+}
+
+.section-two {
+    margin-top: 70px;
+}
+
+.col-2 {
+    filter: grayscale(100%);
+    display: flex;
+}
