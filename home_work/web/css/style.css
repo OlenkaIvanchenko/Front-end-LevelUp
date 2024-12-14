@@ -446,10 +446,13 @@ body {
 .team_info_person {
     display: flex;
     align-items: flex-end;
+    position: relative;
 }
 .team_s_i:nth-last-child(1) {
-    display: flex;
-    align-items: flex-start;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
 }
 
 
@@ -460,4 +463,105 @@ body {
 .button-position {
     display: flex;
     justify-content: flex-end;
+}
+
+
+
+
+/*footer*/
+
+.footer {
+    border-radius: 45px 45px 0 0;
+    background: var(--dark);
+    padding: 60px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-soc {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+
+}
+
+.footer-soc a {
+    transition: 0.3s;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer-soc a:hover {
+    background: var(--green);
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer-navigation a {
+    padding: 20px;
+    color: var(--white);
+    transition: .3s;
+    font-size: 1.2em
+
+}
+
+.footer-navigation a:hover {
+    color: var(--green);
+
+}
+.footre-contant{
+    padding: 65px 0 55px 0;
+}
+.footer-form__lable{
+}
+.footer-form__lable input{
+    border-radius: 14px;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.3em;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+
+.footer-form{
+    padding: 60px 40px;
+    background: #292A32;
+    border-radius: 14px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--white);
+}
+.footer-cont a{
+    color: var(--white);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.footer-copyright{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: var(--white);
+}
+.footer-copyright a{
+    color: var(--white);
+
 }
