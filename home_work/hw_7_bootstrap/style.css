@@ -74,4 +74,19 @@
 .col-2 {
   filter: grayscale(100%);
   display: flex;
+}
+
+.section-three {
+  margin: 140px 0;
+}
+
+.services-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+services-text {
+  max-width: 580px;
+  padding-left: 40px;
 }/*# sourceMappingURL=style.css.map */
