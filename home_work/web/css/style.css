@@ -116,6 +116,7 @@ body {
 
 .section-three {
     margin: 140px 0;
+    height: 100%;
 }
 
 .service_info {
@@ -521,8 +522,7 @@ body {
 .footre-contant{
     padding: 65px 0 55px 0;
 }
-.footer-form__lable{
-}
+
 .footer-form__lable input{
     border-radius: 14px;
     background: transparent;
