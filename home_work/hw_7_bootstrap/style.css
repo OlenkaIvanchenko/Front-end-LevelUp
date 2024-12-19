@@ -63,6 +63,11 @@ body {
   color: var(--primary-black);
 }
 
+.btn-dark:hover {
+  background: var(--secondary-green);
+  color: var(--primary-black);
+}
+
 .section-one {
   margin-top: 70px;
 }
@@ -95,6 +100,10 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 80px;
+}
+
+.col-12 {
+  display: flex;
 }
 
 .services-title {
@@ -198,7 +207,6 @@ body {
 
 .hap-lets {
   font-size: 1.8em;
-  padding-bottom: 26px;
 }
 
 .text-hap {
@@ -215,9 +223,9 @@ body {
 }
 
 .case-label {
-  display: flex;
   align-items: center;
   margin-bottom: 80px;
+  position: relative;
 }
 
 .case-title {
@@ -240,14 +248,8 @@ body {
   padding: 70px 60px;
 }
 
-.vertical-line {
-  border-left: 1px solid white;
-  height: 186px;
-}
-
 .case-box {
-  width: 286px;
-  height: 63px;
+  width: 70%;
 }
 
 .case-box p {
@@ -274,6 +276,35 @@ body {
   background-repeat: no-repeat;
 }
 
-.text-centre {
-  background-color: var(--primary-black);
+.vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 85%;
+  transform: translateX(-50%);
+  border-left: 2.8px solid white;
+  height: 100%;
+}
+
+.section-six {
+  margin-top: 140px;
+}
+
+.work-label {
+  align-items: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.work-title {
+  font-size: 2.4em;
+  background: var(--secondary-green);
+  border-radius: 7px;
+  width: 398px;
+  height: 51px;
+}
+
+.work-text {
+  max-width: 292px;
+  padding-left: 46px;
 }/*# sourceMappingURL=style.css.map */
