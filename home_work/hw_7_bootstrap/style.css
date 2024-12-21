@@ -288,6 +288,7 @@ body {
 
 .section-six {
   margin-top: 140px;
+  counter-reset: section;
 }
 
 .work-label {
@@ -306,5 +307,131 @@ body {
 
 .work-text {
   max-width: 292px;
-  padding-left: 46px;
+  padding-left: 40px;
+}
+
+.accordion .accordion-item {
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 45px;
+  overflow: hidden;
+  box-shadow: 0 5px 0 0 var(--secondary-dark);
+}
+.accordion .accordion-button {
+  font-size: 25px;
+  color: var(--primary-black);
+  background-color: var(--secondary-grey);
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 30px 25px;
+  transition: all 0.1s ease-in-out;
+}
+.accordion .accordion-button::before {
+  counter-increment: section;
+  content: "0" counter(section);
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-right: 20px;
+  color: var(--primary-black);
+}
+.accordion .accordion-button::after {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-dark) !important;
+  background: #F3F3F3;
+  background-image: none !important;
+  transform: none !important;
+  content: "-";
+  padding-bottom: 10px;
+  font-size: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-black);
+  margin-left: auto;
+}
+
+.accordion-button.collapsed {
+  background-color: var(--secondary-grey);
+}
+.accordion-button.collapsed::after {
+  content: "+";
+  padding-top: 10px;
+}
+
+.accordion-collapse .accordion-body {
+  background-color: var(--secondary-green);
+  padding: 25px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--primary-black);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--secondary-green);
+  color: var(--primary-black);
+}
+
+.section-seven {
+  margin-top: 140px;
+}
+
+.team-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.team-label .team-title {
+  font-size: 2.5em;
+  background: var(--secondary-green);
+  border-radius: 7px;
+  width: 115px;
+  height: 51px;
+}
+.team-label .team-text {
+  max-width: 473px;
+  padding-left: 40px;
+}
+
+.team_info {
+  padding: 40px;
+  width: 387px;
+  height: 331px;
+  background: var(--secondary-white);
+  border-radius: 45px;
+  border: 1px solid var(--secondary-dark);
+  box-shadow: 0 5px 0 0 var(--secondary-dark);
+  display: flex;
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+.team_info_text hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.team_info_person {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.team_s_i:nth-last-child(1) {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.team_info_person_text {
+  margin-left: 20px;
+}
+
+.button-position {
+  display: flex;
+  justify-content: flex-end;
 }/*# sourceMappingURL=style.css.map */
