@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --secondary-green: #B9FF66;
   --secondary-dark: #191A23;
@@ -434,4 +435,229 @@ body {
 .button-position {
   display: flex;
   justify-content: flex-end;
+}
+
+.section-eight {
+  margin-top: 140px;
+}
+
+.contact-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.contact-label .contact-title {
+  font-size: 2.5em;
+  background: var(--secondary-green);
+  border-radius: 7px;
+  width: 229px;
+  height: 51px;
+}
+.contact-label .contact-text {
+  width: 323px;
+  padding-left: 40px;
+}
+
+.contact-form {
+  padding: 60px 100px;
+  background: var(--secondary-grey);
+  border-radius: 45px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-check-input {
+  --bs-form-check-bg: var(--bs-form-control-bg);
+  width: 28px;
+  height: 28px;
+  margin-top: 0em;
+  vertical-align: top;
+  background-color: var(--secondary-white);
+  background-image: var(--bs-form-check-bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+  border: 1px solid var(--secondary-dark);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  box-shadow: none !important;
+}
+
+.form-check-input:checked[type=radio] {
+  --bs-form-check-bg-image: url(./img/Ellipse\ 27.png);
+  background-position: center !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--secondary-white);
+  border-color: var(--secondary-dark);
+}
+
+.form-check-label {
+  margin-left: 14px; /* Відступ від кружечка до тексту */
+}
+
+.contact-details {
+  padding-top: 40px;
+}
+
+.form-control {
+  border-color: var(--secondary-dark);
+  border-radius: 14px;
+  padding-bottom: 25px;
+  width: 556px;
+  height: 59px;
+}
+
+.form-control-message {
+  height: 190px;
+}
+
+.form-label {
+  padding-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.btn-width {
+  width: 556px;
+  height: 68px;
+}
+
+.img-contact {
+  position: absolute;
+  width: 691.57px;
+  height: 648px;
+  right: -5%;
+  margin-top: 63px;
+}
+
+footer {
+  margin-top: 140px;
+}
+
+.footer-box {
+  border-radius: 45px 45px 0 0;
+  background: var(--secondary-dark);
+  padding: 60px;
+}
+
+.footer-logo {
+  width: 180px;
+  height: 29px;
+}
+
+.footer-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-color: var(--secondary-white);
+  font-size: 1.2em;
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  -webkit-text-decoration: underline var(--secondary-white);
+          text-decoration: underline var(--secondary-white);
+}
+
+.nav:hover {
+  color: var(--secondary-green);
+}
+
+.position-nav {
+  position: absolute;
+  left: 30%;
+  top: 1;
+}
+
+.footer-img {
+  position: absolute;
+  right: 0;
+}
+
+.footer-contant {
+  padding: 65px 0 55px 0;
+}
+
+.footer-cont {
+  width: 332px;
+  height: 185px;
+}
+
+.footer-cont h4 {
+  background-color: var(--secondary-green);
+  width: 126px;
+  height: 26px;
+  color: var(--primary-black);
+}
+
+.footer-form {
+  padding: 60px 40px;
+  background: #292A32;
+  border-radius: 14px;
+  display: flex;
+  gap: 20px;
+  width: 634px;
+  height: 185px;
+}
+
+.footer-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--secondary-white);
+  width: 332px;
+}
+
+.footer-cont a {
+  color: var(--secondary-white);
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.footer-form__lable input {
+  border-radius: 14px;
+  background: transparent;
+  width: 285px;
+  height: 67px;
+  padding: 10px;
+  font-size: 1.3em;
+  color: var(--secondary-white);
+  border: 1px solid var(--secondary-white);
+}
+
+.footer-copyright {
+  padding-top: 50px;
+  display: flex;
+  gap: 40px;
+  color: var(--secondary-white);
+}
+
+.footer-copyright a {
+  color: var(--secondary-white);
+}
+
+.btn-light {
+  color: var(--primary-black);
+  background-color: var(--secondary-green);
+  border-color: var(--secondary-green);
+}
+
+.btn-light:hover {
+  background: var(--secondary-white);
+  border-color: var(--secondary-white);
 }/*# sourceMappingURL=style.css.map */
