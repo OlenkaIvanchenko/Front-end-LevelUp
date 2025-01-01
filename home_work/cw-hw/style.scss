@@ -27,6 +27,18 @@ h5 {
 h6 {
     font-size: 14px;
 }
+.icon-head {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-light {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+
+}
 .header-nav {
     border-bottom: 1px solid #C1C1C1;
     padding-bottom: 20px;
@@ -80,7 +92,7 @@ h6 {
 
     &_active {
         border: none;
-        background: var(--bs-btn-bg) !important;
+        background: var(--text-blue) !important;
     }
 
     &:hover {
