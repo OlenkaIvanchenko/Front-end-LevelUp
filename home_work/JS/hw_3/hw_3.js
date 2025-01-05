@@ -1,43 +1,54 @@
 //                  Завдання 1: Генерація випадкового кольору
-function getRandomColor() {
-    const r = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
+// function getRandomColor() {
+    // const r = Math.floor(Math.random() * 256);
+    // const b = Math.floor(Math.random() * 256);
+    // const g = Math.floor(Math.random() * 256);
 
-    // перетворення чисел в 16 рядковий формат:
-    const red = r.toString(16).padStart(2, '0');
-    const blue = b.toString(16).padStart(2, '0');
-    const green = g.toString(16).padStart(2, '0');
+    // // перетворення чисел в 16 рядковий формат:
+    // const red = r.toString(16).padStart(2, '0');
+    // const blue = b.toString(16).padStart(2, '0');
+    // const green = g.toString(16).padStart(2, '0');
 
     // повернення кольору у форматі #RRGGBB
-    return `#${red}${blue}${green}`;
+    //return `#${red}${blue}${green}`;
+//}
+// console.log(getRandomColor());
+// console.log(getRandomColor());
+// console.log(getRandomColor());
+
+
+// function generateColorsArrey(n) {
+//     const colors = [];
+//     for (let i = 0; i < n; i++) {
+//         colors.push(getRandomColor());
+//     }
+//     return colors;
+// }
+
+function getRandomColor() {
+    const getRandomValue = () => Math.floor(Math.random()*256).toString(16).padStart(2, '0');
+    return `#${getRandomValue()}${getRandomValue()}${getRandomValue()}`;
+    
 }
 
-console.log(getRandomColor());
-console.log(getRandomColor());
-console.log(getRandomColor());
-
-function generateColorsArrey(n) {
-    const colors = [];
-    for (let i = 0; i < n; i++) {
-        colors.push(getRandomColor());
-    }
-    return colors;
+function generateColorArrey (n) {
+    //Array.from({ length: n }, ...) створює масив з n елементів, для кожного з яких викликається функція getRandomColor()
+    return Array.from ({length: n}, () => getRandomColor());
 }
 
 // генеруємо 10 кольорів
 
-const randomColors = generateColorsArrey(10);
+const randomColors = generateColorArrey(10);
 console.log(randomColors);
 
 
 
 //                  Завдання 2: Випадковий вибір значення
-function randomeChoice(Array) {
+function randomeChoice(array) {
     //генерація випадкового індексу
     const randomeIndex = Math.floor(Math.random() * Array.length);
     //повернення елементу масиву за цим індексом
-    return Array[randomeIndex];
+    return array[randomeIndex];
 }
 
 const fruits = ['apple', 'banana', 'cherry', 'date', 'grape'];
@@ -48,12 +59,12 @@ console.log(randomeChoice(fruits));
 //                  Завдання 3: Випадковий масив чисел
 
 function generateRandomArrey(n, min, max) {
-    const RandomNumbers = [];
+    const randomNumbers = [];
     for (let i = 0; i < n; i++){
-        const RandomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-        RandomNumbers.push(RandomNumber);
+        const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+        randomNumbers.push(randomNumber);
     }
-    return RandomNumbers;
+    return randomNumbers;
 }
 console.log(generateRandomArrey(7, 1, 100));
 
