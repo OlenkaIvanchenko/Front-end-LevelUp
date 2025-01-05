@@ -24,6 +24,7 @@
 //     }
 //     return colors;
 // }
+//Array.from({ length: n }, ...) створює масив з n елементів, для кожного з яких викликається функція getRandomColor() = return Array.from ({length: n}, () => getRandomColor());
 
 function getRandomColor() {
     const getRandomValue = () => Math.floor(Math.random()*256).toString(16).padStart(2, '0');
@@ -32,8 +33,10 @@ function getRandomColor() {
 }
 
 function generateColorArrey (n) {
-    //Array.from({ length: n }, ...) створює масив з n елементів, для кожного з яких викликається функція getRandomColor()
-    return Array.from ({length: n}, () => getRandomColor());
+    return Array(n).fill(null).reduce((acc) => {
+        acc.push(getRandomColor());
+        return acc;
+    }, []);
 }
 
 // генеруємо 10 кольорів
@@ -46,12 +49,12 @@ console.log(randomColors);
 //                  Завдання 2: Випадковий вибір значення
 function randomeChoice(array) {
     //генерація випадкового індексу
-    const randomeIndex = Math.floor(Math.random() * Array.length);
+    const randomeIndex = Math.floor(Math.random() * array.length);
     //повернення елементу масиву за цим індексом
     return array[randomeIndex];
 }
 
-const fruits = ['apple', 'banana', 'cherry', 'date', 'grape'];
+const fruits = ['apple', 'banana', 'cherry', 'orange', 'grape'];
 
 console.log(randomeChoice(fruits));
 console.log(randomeChoice(fruits));
