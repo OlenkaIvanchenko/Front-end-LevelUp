@@ -26,18 +26,29 @@
 // }
 //Array.from({ length: n }, ...) створює масив з n елементів, для кожного з яких викликається функція getRandomColor() = return Array.from ({length: n}, () => getRandomColor());
 
+// function getRandomColor() {
+//     const getRandomValue = () => Math.floor(Math.random()*256).toString(16).padStart(2, '0');
+//     return `#${getRandomValue()}${getRandomValue()}${getRandomValue()}`;
+// }
+// function generateColorArrey (n) {
+//     return Array(n).fill(null).reduce((acc) => {
+//         acc.push(getRandomColor());
+//         return acc;
+//     }, []);
+// }
+//                  Завдання 1: Генерація випадкового кольору
 function getRandomColor() {
-    const getRandomValue = () => Math.floor(Math.random()*256).toString(16).padStart(2, '0');
-    return `#${getRandomValue()}${getRandomValue()}${getRandomValue()}`;
-    
+    let color = '#';
+    for (let i = 0; i < 3; i++) {
+        const randomValue = Math.floor(Math.random()*256).toString(16).padStart(2, '0');
+        color += randomValue;
+    }
+    return color;
+}
+function generateColorArrey(n) {
+    return Array.from({ length: n }, () => getRandomColor());
 }
 
-function generateColorArrey (n) {
-    return Array(n).fill(null).reduce((acc) => {
-        acc.push(getRandomColor());
-        return acc;
-    }, []);
-}
 
 // генеруємо 10 кольорів
 
