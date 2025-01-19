@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>window_size</title>
+</head>
+<body>
+    <div id="screenWidth"></div>
+    <div id="screenHeight"></div>
+    <script>
+
+        console.log("Ширина екрану:", window.innerWidth, "Висота екрану:", window.innerHeight);
+
+        let screenWidth = document.querySelector('#screenWidth');
+        let screenHeight = document.querySelector('#screenHeight');
+        screenHeight.textContent = 'Висота екрану: ' + window.innerHeight;
+        screenWidth.textContent = 'Ширина екрану: ' + window.innerWidth;
+
+        window.addEventListener("resize", function() {
+            
+            console.log("Ширина екрану:", window.innerWidth, "Висота екрану:", window.innerHeight);
+            document.getElementById("screenWidth").innerHTML = 'Ширина екрану: ' + window.innerWidth;
+            document.getElementById("screenHeight").innerHTML = 'Ширина екрану: ' + window.innerWidth;
+            
+        });
+
+        function minSizeAlert() {
+            if (window.innerWidth < 600) {
+                alert("Розмір вікна занадто малий");
+            }
+        }
+
+        window.addEventListener("resize", minSizeAlert);
+
+    </script>  
+</body>
+</html>

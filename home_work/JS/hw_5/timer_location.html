@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>timer_location</title>
+</head>
+<body>
+    <div id="countdown"></div>
+    <script>
+        let oH1 = document.querySelector('#countdown'); // #countdown - id div-а
+        let nSec = 10;
+
+        function fCountdown() {
+        oH1.textContent = 'Залишилось секунд до переходу на іншу сторінку: ' + '00:' + (nSec < 10 ? '0' + nSec : nSec);
+            if (!nSec) {
+                clearInterval(tCountdown);
+                setTimeout(() => {
+                    nSec = 10;
+                    tCountdown = setInterval(fCountdown, 1000);
+                    window.open("http://www.google.com")
+                }, 0);
+            }
+            nSec--;
+        }
+        let tCountdown = setInterval(fCountdown, 1000);
+            
+    </script>
+</body>
+</html>
