@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let miles = 130;
+        console.log('Відстань ' + miles + ' миль.');
+        miles *= 1.60934;
+        console.log('дорівнює ' + miles + ' км');
+
+        // варіант 2
+        let miles2 = 130;
+        let km = miles2 * 1.60934;
+        console.log(`Відстань ${miles2} миль. дорівнює ${km} km`);
+
+        // Вычислитель индекса массы тела (ИМТ)
+        let height = 65;
+        let weight = 141;
+        let sm = height * 2.54;
+        let kg = weight / 2.2046;
+        console.log(`Зріст у дюймах: ${height} це ${sm} сантиметр. Вага в фунтах: ${weight} це ${kg} кілограм`);
+        let imt = kg / ((sm/100)**2);
+        console.log(`Ваш індекс маси тіла дорівнює: ${imt}`);
+
+
+        let firstNum = 5;
+        let secondNum = 10;
+        firstNum++;
+        secondNum--;
+        let total = ++firstNum + secondNum;
+        console.log(total);
+        let total2 = 500 + 100 / 5 + --total;
+        console.log(total2);
+
+
+        const a = 5;
+        const b = 10;
+        console.log(a > 0 && b > 0);
+        console.log(a == 5 && b == 4);
+        console.log(true || false);
+        console.log(a == 3 || b == 10);
+        console.log(a == 3 || b == 7);
+
+        listOfGroceries = ['Milk', 'Bread', 'Apples']
+        console.log(listOfGroceries.length);
+        listOfGroceries[1] = 'Bananas';
+        console.log(listOfGroceries);
+
+
+        let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"];
+        arrOfShapes.splice(2, 0, "square", "trapezoid");
+        console.log(arrOfShapes);
+
+        let animals = ["dog", "horse", "cat", "platypus", "dog", "horse", "horse"];
+        console.log(animals.lastIndexOf("horse"));
+
+
+
+        listOfPopki = [];
+        listOfPopki.push('Milk', 'Bread', 'Apples');
+        listOfPopki.splice(1, 1, 'Bananas', 'Eggs');
+        console.log(listOfPopki);
+        listOfPopki.pop();
+        console.log(listOfPopki);
+        listOfPopki.sort();
+        console.log(listOfPopki.indexOf('Milk'));
+        console.log(listOfPopki.indexOf('Bananas'));
+        listOfPopki.splice(1, 0, 'Carrots', 'Lettuce');
+        console.log(listOfPopki);
+
+        beverage = ['Juice', 'Pop'];
+        total = listOfPopki.concat(beverage, beverage);
+        console.log(total.lastIndexOf('Pop'));
+        console.log(total);
+     // Практичне завдання 3.3
+        numbersArr = [1, 2, 3];
+        newNumbersArr = [numbersArr, numbersArr, numbersArr];
+        let middleValue = newNumbersArr[1][1];
+        console.log(middleValue);
+
+
+        let dog = {    
+            dogName: "JavaScript",
+            weight: 2.4,
+            color: "brown",
+            breed: "chihuahua",
+            age: 3,
+            burglarBiter: true
+        };
+        let dogColor1 = dog["color"];
+        let dogColor2 = dog.color;
+        console.log(dogColor2);
+        console.log(dogColor1);
+
+        dog["color"] = "blue";
+        dog.weight = 2.3;
+        console.log(dog);
+
+        // практичне 3.4
+
+        let myCar = {
+            make: 'xz',
+            model: 'Audi',
+            color: 'red',
+            speed: 300
+        };
+        let myColor = "color";
+        myCar[myColor] = "green"; 
+        console.log(myCar[myColor]);
+        myColor = "color"
+        console.log(myCar);
+        color = "forSale";
+        myCar[color] = true;
+        console.log('make:', myCar.make);
+        console.log('model:', myCar.model);
+        console.log('forSale:', myCar.forSale);
+        console.log(myCar)
+
+        /// практичне завдання 3.5
+        let people = {
+            friends: [],
+        };
+        let friends1 = {
+            name: 'Djone',
+            lastName: 'Popov',
+            id: 2,
+        }
+        let friends2 = {
+            name: 'Dine',
+            lastName: 'Mops',
+            id: 5,
+        }
+        let friends3 = {
+            name: 'Rone',
+            lastName: 'Komov',
+            id: 35,
+        }
+        people.friends.push(friends1, friends2, friends3) ;
+        console.log(people);
+
+
+        // керування масивами
+
+        const theList = ['Laurence', 'Svekis', true, 35, null, undefined,
+        {test: 'one', score: 55}, ['one', 'two']];
+        // Используя методы pop(), push(), shift() и unshift(), добейтесь следующего ре-
+        // зультата в консоли:
+        // ["FIRST", "Svekis", "MIDDLE", "hello World", "LAST"]
+    </script>
+</body>
+</html>
