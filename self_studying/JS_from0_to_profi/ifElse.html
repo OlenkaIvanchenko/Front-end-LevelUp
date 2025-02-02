@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Практичне 4.2
+        // let age = Number(prompt('Уведіть ваш вік: '));
+        // let message = '';
+        // if(age >= 21){
+        //     message = "Дозволено вхід та покупку алкоголю ";  
+        // }else if(age >= 19){
+        //     message = "Дозволено вхід, але заборонено покупку алкоголю ";
+        // }else{
+        //     message = "Вхід заборонено!"
+        // }
+        // console.log(message);
+
+        // Практичне 4.3
+        let id = true;
+        let message2 = 'Вхід дозволено';
+        id ? message2 : message2 = 'Вхід заборонено';
+        console.log(message2);
+        
+
+        // Практичне завдання 4.4
+        // let randomNum = Math.floor(Math.random() * 6)
+        // console.log(randomNum);
+        // let userAnswer = '';
+        // let userQuestion = prompt('Поставте запитання: ');
+        // switch(randomNum) {
+        //     case 0: 
+        //         userAnswer = 'Це точно!';
+        //         break;
+        //     case 1:
+        //         userAnswer = 'Це не точно!';
+        //         break;
+        //     case 2:
+        //         userAnswer = 'Можливо, так';
+        //         break;
+        //     case 3:
+        //         userAnswer = 'Можливо, ні';
+        //         break;
+        //     case 4:
+        //         userAnswer = 'Не точно';
+        //         break;
+        //     case 5:
+        //         userAnswer = 'Дюня дурак';
+        //         break;
+        // }
+        // let answer = 'Ви запитали: ' + userQuestion + ' Відповідь: ' + userAnswer;
+        // console.log(answer);
+
+
+        // Практичне 4.5
+        // let prize = '';
+        // let userChoice = Number(prompt('Уведіть число від 0 до 10:'));
+        // let mySelection = '';
+        // switch(userChoice) {
+        //     case 0:
+        //     case 5: 
+        //         prize = 'Ваш виграш: 0';
+        //         break;
+        //     case 2: 
+        //     case 7:
+        //         prize = 'Ваш виграш: 10$';
+        //         break;
+        //     case 3: 
+        //     case 10: 
+        //         prize = 'Ваш виграш: 2$';
+        //         break;
+        //     default:
+        //         prize = 'Ваш виграш: бублик'
+        // }
+        // mySelection = 'Ви ввели число:' + ' ' + userChoice + ' ' + prize;
+        // console.log(mySelection);
+        let login = false;
+        let outputHolder = "";
+        let userOkay = login ? outputHolder = "logout" : outputHolder =
+        "login";
+        console.log(userOkay);
+    </script>
+</body>  
+</html>

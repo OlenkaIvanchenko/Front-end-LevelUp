@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let randomNum = Math.floor(Math.random() * 100);
+        // let userNum = Number(prompt('Уведіть число від 0 до 99:'));
+        // let result = '';
+        // switch(true) {
+        //     case userNum > randomNum:
+        //         result = 'Ваше число більше';
+        //         break;
+        //     case userNum < randomNum:
+        //         result = 'Ваше число менше';
+        //         break;
+        //     case userNum == randomNum:
+        //         result = 'Ваше число дорівнює';
+        //         break;
+        //     default:
+        //         result = 'Ви ввели не числове значення, уведіть число:';
+        // }
+        // let message = 'Ваше число: ' + userNum + ' Рандомне число: ' + randomNum + ' Результат: ' + result;
+        // console.log(message);
+
+        // let randomNum = Math.floor(Math.random() * 100);
+        // let userNum = Number(prompt('Уведіть число від 0 до 99:'));
+        // let result = '';
+
+        // if(userNum > randomNum){
+        //     result = 'більше';
+        // }else if(userNum < randomNum){
+        //     result = 'менше';
+        // }else if(userNum == randomNum){
+        //     result = 'дорівнює';
+        // }else{
+        //     result = 'уведіть число';
+        // }
+        // console.log('Ваше число: ' + userNum + ' Рандомне число: ' + randomNum + ' Результат: ' + result);
+
+        // let userName = prompt('Уведіть ваше ім\'я');
+        // switch(userName){
+        //     case 'Катя':
+        //     case 'Вася':
+        //     case 'Петя':
+        //     case 'Маша':
+        //     case 'Наташа':
+        //     case 'Христя':
+        //         console.log('You are my friend');
+        //         break;
+        //     default:
+        //         console.log('I don\'t know you');
+        // }
+
+        const game = [
+            'Rock', 'Paper', 'Scissors',
+        ];
+        let userRandomNum = Math.floor(Math.random() * 3);
+        let computerRandomNum = Math.floor(Math.random() * 3);
+        let userChoice = '';
+        let computerChoice = '';
+        let result = '';
+
+        // if(userRandomNum == 0) {
+        //     userChoice = game[0];
+        // } if (computerRandomNum == 0) {
+        //     computerChoice = game[0];
+
+        // } if (userRandomNum == 1) {
+        //     userChoice = game[1];
+        // } if (computerRandomNum == 1) {
+        //     computerChoice = game[1];
+
+        // } if (userRandomNum == 2) {
+        //     userChoice = game[2];
+        // } if (computerRandomNum == 2) {
+        //     computerChoice = game[2];
+        // } 
+
+        if(userRandomNum > computerRandomNum){
+            result = 'User\'s won';
+        }else if(userRandomNum < computerRandomNum){
+            result = 'Computer\'s won'
+        }else if(userRandomNum == computerRandomNum){
+            result = 'No one won'
+        }else if(userRandomNum == 0 && computerRandomNum == 2){
+            result = 'User\'s won';
+        }else if(userRandomNum == 2 && computerRandomNum == 0){
+            result = 'Computer\'s won';
+        }
+
+        console.log(result);
+        console.log('User choise: ' + game[userRandomNum] + ' Computer choise: ' + game[computerRandomNum]);
+
+        const myArr = ["Rock", "Paper", "Scissors"];
+
+        let computer = Math.floor(Math.random() * 3);
+        let player = Math.floor(Math.random() * 3);
+
+        let message = "player " + myArr[player] + " vs computer " + myArr[computer] + " ";
+
+        if (player === computer) {
+            message += "it's a tie";
+        } else if (player > computer) {
+            if (computer == 0 && player == 2) {
+                message += "Computer Wins";
+            } else {
+                message += "Player Wins";
+            }
+        } else {
+            if (computer == 2 && player == 0) {
+                message += "Player Wins";
+            } else {
+                message += "Computer Wins";
+            }
+        }
+        console.log(message);
+    </script>
+</body>
+</html>
