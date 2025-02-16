@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <div class="conteiner">
+        <div class="rotate">
+            <div class="rotate-wheel"></div>
+            <button onclick="rotateBtn()" disabled class="spin-btn">крутити</button>
+        </div>
+
+        <div class="section">
+            <form action="">
+                <label required id="lanel-use">Додати користувача<input required placeholder="Name" type="text" name="user" id="">Список</label>
+                <button id="btn">Додати користувача</button>
+            </form>
+            <ul id="list"></ul>
+        </div>
+        <div class="modal">
+            <p class="modal-content"></p>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
